@@ -1,0 +1,14 @@
+<html>
+	<body>
+		<% for(var i in students) { %>
+       		<div>
+       			<img src="/images/score.jpg" width="50px" height="50px"><br/>
+       			Name: <%= students[i].name %> <br/>
+       			Percentage: <%= (students[i].scores.physics + students[i].scores.chemistry + students[i].scores.maths)/3 %>
+       		</div>
+		<% } %>
+		<div>
+
+		</div>
+	</body>
+</html>
